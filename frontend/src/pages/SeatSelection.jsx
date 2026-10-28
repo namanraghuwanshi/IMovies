@@ -28,7 +28,7 @@ const SeatSelection = () => {
     try {
       setLoading(true);
       setError('');
-      const response = await API.get(`/showtimes/${showtimeId}`);
+      const response = await API.get(`/api/showtimes/${showtimeId}`);
       setShowtime(response.data);
     } catch (err) {
       console.error('Error fetching showtime:', err);
