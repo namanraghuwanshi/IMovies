@@ -1,0 +1,66 @@
+/* Custom styles for IMovies */
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+}
+
+/* Movie Card Hover */
+.movie-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Showtime card hover */
+.showtime-card {
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.showtime-card:hover {
+  transform: translateY(-2px);
+  border-color: #0d6efd !important;
+}
+
+/* Screen indicator in seat selection */
+.screen-container {
+  perspective: 400px;
+}
+
+.cinema-screen {
+  background: linear-gradient(180deg, #adb5bd 0%, #e9ecef 100%);
+  height: 24px;
+  width: 75%;
+  margin: 0 auto 6px auto;
+  border-radius: 6px;
+  transform: rotateX(-30deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #495057;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Legend box in seat map */
+.seat-legend-box {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #adb5bd;
+  border-radius: 4px;
+}
