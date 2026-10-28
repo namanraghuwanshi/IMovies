@@ -21,9 +21,10 @@ const MovieDetails = () => {
 
         // Parallel requests for movie info and its showtimes
         const [movieRes, showtimesRes] = await Promise.all([
-          API.get(`/movies/${id}`),
-          API.get(`/movies/${id}/showtimes`),
-        ]);
+API.get(`/api/movies/${id}`),
+API.get(`/api/movies/${id}/showtimes`),
+]);
+
 
         setMovie(movieRes.data);
         setShowtimes(showtimesRes.data);
