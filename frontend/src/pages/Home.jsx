@@ -20,7 +20,7 @@ const Home = () => {
     try {
       setLoading(true);
       setError('');
-      let url = '/movies';
+      let url = '/api/movies';
       const params = new URLSearchParams();
 
       if (searchTerm.trim()) {
